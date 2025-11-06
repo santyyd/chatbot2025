@@ -14,7 +14,7 @@ MODELOS = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile", "openai/gpt-oss-12
 #MODELO ELEGIDO POR EL USUARIO
 def configurar_pagina():
 
-    st.set_page_config(page_title="El chat de santyy", page_icon= "😛")
+    st.set_page_config(page_title="El chat de santyy", page_icon= "✔")
 
     st.title("El chat de Santy")
 
@@ -82,5 +82,6 @@ if promt_del_usuario:
         actualizar_historial("assistant", respuesta_posta, "💽")
 
         st.rerun()
+
 
 
