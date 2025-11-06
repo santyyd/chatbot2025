@@ -6,7 +6,7 @@ altura_contenedor_chat = 600
 stream_status = True
 
 #CONSTANTES
-MODELOS = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile", "llama-guard-4-12b"]
+MODELOS = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile", "openai/gpt-oss-120b"]
 
 #FUNCIONES
 
@@ -82,4 +82,5 @@ if promt_del_usuario:
         actualizar_historial("assistant", respuesta_posta, "💽")
 
         st.rerun()
+
 
