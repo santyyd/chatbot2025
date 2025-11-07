@@ -73,15 +73,16 @@ area_chat()
 promt_del_usuario = st.chat_input("Escribí tu prompt: ")
 
 if promt_del_usuario:
-    actualizar_historial("user", promt_del_usuario, "🍳")
+    actualizar_historial("user", promt_del_usuario, "💔")
     respuesta_del_bot = configurar_modelo(cliente_usuario, modelo_elegido_por_el_usuario, promt_del_usuario)
 
     if respuesta_del_bot:
         with st.chat_message("assistant"):
             respuesta_posta = st.write_stream(generar_respuesta(respuesta_del_bot))
-        actualizar_historial("assistant", respuesta_posta, "💽")
+        actualizar_historial("assistant", respuesta_posta, "🥀")
 
         st.rerun()
+
 
 
 
